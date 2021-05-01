@@ -160,8 +160,45 @@
             border-radius: 20px;
             font-size: 16pt;
         }
-      #interns .container {
+
+        #interns .container {
             max-width: 80% !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                max-width: 90% !important;
+            }
+
+            #interns .container {
+                max-width: 90% !important;
+            }
+
+            p {
+                max-width: 80%
+            }
+
+            .arrow:after {
+                content: ""
+            }
+
+            #interns .container hr:after {
+                font-family: "Font Awesome 5 Free";
+                display: inline-block;
+                padding-right: 3px;
+                vertical-align: middle;
+                font-weight: 900;
+                content: "\f061";
+                position: absolute;
+                left: 0;
+                transform: translate(-100%, -50%);
+                z-index: 1;
+                color: gold;
+                font-size: 28pt;
+                top: 80px;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -205,8 +242,8 @@
         planning new feature to production deployment.</p>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-sm-4">
                 <h3>Internet Brands</h3>
                 <h5>Quality Assurance Engineer Intern</h5>
                 <hr color="gold" width="60%">
@@ -223,7 +260,7 @@
 
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4">
                 <h3>Qualcomm</h3>
                 <h5>Software Engineer Intern</h5>
                 <hr class="arrow" color="gold" width="60%">
@@ -243,7 +280,7 @@
                 </ul>
 
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4">
                 <h3>Internet brands</h3>
                 <h5>Web Developer Intern</h5>
                 <hr class="arrow" color="gold" width="60%">
