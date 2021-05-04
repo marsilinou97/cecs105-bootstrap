@@ -357,6 +357,7 @@
             var activeColor = $(this).attr('id');
             if ($(this).isInViewport()) {
                 $('nav a').removeClass("active")
+                $('nav a').blur();
                 $('nav a.' + $(this).attr("id")).addClass("active")
 
             } else {
